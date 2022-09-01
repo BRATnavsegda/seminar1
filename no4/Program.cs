@@ -42,14 +42,15 @@
 // заполненный нулями и единицами в случайном порядке.
 
 
-Console.Clear();
+// Console.Clear();
 
-int[] mas = new int [8];
+// int[] mas = new int [8];
 
-for (int i = 0; i < mas.Length; i++)
-{
-    //Random rnd = new Random();
+// for (int i = 0; i < mas.Length; i++)
+// {
+//     //Random rnd = new Random();
 
-    mas[i] = new Random().Next(0,2);
-    Console.Write(mas[i]);
-}
+//     mas[i] = new Random().Next(0,2);
+//     Console.Write(mas[i]);
+// }
+
