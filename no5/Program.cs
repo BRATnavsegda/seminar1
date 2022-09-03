@@ -128,17 +128,18 @@
 // [1, 2, 3, 6, 2] -> 0
 // [10, 11, 12, 13, 14] -> 5
 
-int[] EnterRandomArray()
-{
-    Console.Write("Enter length of array...\t");
-    int number = Convert.ToInt32(Console.ReadLine());
+// int[] EnterRandomArray()
+// {
+//     Console.Write("Enter length of array...\t");
+//     int number = Convert.ToInt32(Console.ReadLine());
 
-    int[] array = new int[number];
+//     int[] array = new int[number];
 
-    for (int i = 0; i < array.Length; i++)
-    {
-        array[i] = new Random().Next(-1000, 1000);
-    }
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         array[i] = new Random().Next(-1000, 1000);
+//     }
 
-    return array;
-}
+//     return array;
+// }
+// EnterRandomArray();
