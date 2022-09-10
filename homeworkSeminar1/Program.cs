@@ -11,7 +11,7 @@
     int taskNumber = Convert.ToInt32(Console.ReadLine());
     switch (taskNumber)
     {
-        case 0: return; break;
+        case 0: return; //break;
         case 2: MoreOrLessNumber(); break;
         case 4: MaxOfThreeNumbers(); break;
         case 6: EvenNumber(); break;
