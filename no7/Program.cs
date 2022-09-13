@@ -51,21 +51,21 @@ int[,] PrintArray(int[,] array)
 // каждый элемент в массиве находится по формуле: Aₘₙ = m+n. 
 // Выведите полученный массив на экран.
 
-// Console.WriteLine("Enter the number of rows in the array:");
-// int rows = GetNumber();
+/* Console.WriteLine("Enter the number of rows in the array:");
+int rows = GetNumber();
 
-// Console.WriteLine("Enter the number of columns in the array:");
-// int columns = GetNumber();
+Console.WriteLine("Enter the number of columns in the array:");
+int columns = GetNumber();
 
-// int[,] array = new int[rows, columns];
-// for (int i = 0; i < rows; i++)
-// {
-//     for (int j = 0; j < columns; j++)
-//     {
-//         array[i, j] = i + j;
-//     }
-// }
-// PrintArray(array);
+int[,] array = new int[rows, columns];
+for (int i = 0; i < rows; i++)
+{
+    for (int j = 0; j < columns; j++)
+    {
+        array[i, j] = i + j;
+    }
+}
+PrintArray(array); */
 
 // Задача 49: Задайте двумерный массив. 
 // Найдите элементы, у которых оба индекса чётные, 
