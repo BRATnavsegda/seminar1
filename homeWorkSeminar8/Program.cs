@@ -29,7 +29,8 @@
         }
         else if (taskNumber == 60)
         {
-            Array3D();
+            int[,,] array = new int[2, 2, 2];
+            Array3D(array);
         }
         else if (taskNumber == 62)
         {
@@ -245,15 +246,14 @@ void ProductTwoMatrices()
 // Задача 60. Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. 
 // Напишите программу, которая будет построчно выводить массив, 
 // добавляя индексы каждого элемента.
-// Массив размером 2 x 2 x 2
+// Массив размером 2 l 2 l 2
 // 66(0,0,0) 25(0,1,0)
 // 34(1,0,0) 41(1,1,0)
 // 27(0,0,1) 90(0,1,1)
 // 26(1,0,1) 55(1,1,1)
 
-void Array3D()
+void Array3D(int[,,] array)
 {
-    int[,,] array = new int[2, 2, 2];
     for (int i = 0; i < array.GetLength(0); i++)
     {
         for (int j = 0; j < array.GetLength(1); j++)
@@ -261,6 +261,17 @@ void Array3D()
             for (int k = 0; k < array.GetLength(2); k++)
             {
                 array[i, j, k] = new Random().Next(10, 100);
+                for (int l = 0; l < i; l++)
+                {
+                    for (int m = 0; m < j; m++)
+                    {
+                        for (int n = 0; n < k; n++)
+                        {
+                            while (array[i, j, k] == array[l, m, n])
+                                Array3D(array);
+                        }
+                    }
+                }
                 Console.Write($"[{i},{j},{k}] - {array[i, j, k]}; ");
             }
             Console.WriteLine();
